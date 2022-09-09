@@ -17,6 +17,4 @@ public class CabinController {
     public List<Cabin> getCabins(){
         return cabinService.getCabins();
     }
-
-    
 }
