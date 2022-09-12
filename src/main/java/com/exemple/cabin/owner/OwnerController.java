@@ -1,6 +1,5 @@
-package com.exemple.cabin;
+package com.exemple.cabin.owner;
 
-import com.exemple.cabin.entities.Owner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
