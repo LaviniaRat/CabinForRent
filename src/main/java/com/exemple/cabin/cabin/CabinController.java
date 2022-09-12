@@ -1,6 +1,5 @@
-package com.exemple.cabin;
+package com.exemple.cabin.cabin;
 
-import com.exemple.cabin.entities.Cabin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +14,6 @@ public class CabinController {
 
     @GetMapping("/getCabins")
     public List<Cabin> getCabins(){
-        return cabinService.getCabins();
+        return cabinService.getAllCabins();
     }
 }

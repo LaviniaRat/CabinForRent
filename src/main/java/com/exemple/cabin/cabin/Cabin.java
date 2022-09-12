@@ -1,5 +1,6 @@
-package com.exemple.cabin.entities;
+package com.exemple.cabin.cabin;
 
+import com.exemple.cabin.owner.Owner;
 import lombok.Data;
 
 import javax.persistence.*;

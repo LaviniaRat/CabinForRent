@@ -1,9 +1,8 @@
-package com.exemple.cabin;
+package com.exemple.cabin.owner;
 
-import com.exemple.cabin.entities.Owner;
+import com.exemple.cabin.owner.Owner;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Repository
 public interface OwnerRepository extends JpaRepository<Owner, Integer> {

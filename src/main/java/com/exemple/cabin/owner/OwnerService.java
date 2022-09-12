@@ -1,6 +1,5 @@
-package com.exemple.cabin;
+package com.exemple.cabin.owner;
 
-import com.exemple.cabin.entities.Owner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +28,7 @@ public class OwnerService {
         if(owner.isPresent()){
             return owner.get();
         } else{
-            throw new NoSuchElementException("No owner record exist gor given id");
+            throw new NoSuchElementException("No owner record exist or given id");
         }
     }
 
@@ -43,7 +42,7 @@ public class OwnerService {
             newOwner = ownerRepository.save(newOwner);
             return newOwner;
         } else{
-            throw new NoSuchElementException("No owner record exist gor given id");
+            throw new NoSuchElementException("No owner record exist or given id");
         }
     }
 
@@ -61,7 +60,7 @@ public class OwnerService {
         if(owner.isPresent()){
             ownerRepository.deleteById(id);
         } else{
-            throw new NoSuchElementException("No owner record exist gor given id");
+            throw new NoSuchElementException("No owner record exist or given id");
         }
 
 

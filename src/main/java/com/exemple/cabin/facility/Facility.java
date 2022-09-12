@@ -1,4 +1,4 @@
-package com.exemple.cabin.entities;
+package com.exemple.cabin.facility;
 
 import lombok.Data;
 
