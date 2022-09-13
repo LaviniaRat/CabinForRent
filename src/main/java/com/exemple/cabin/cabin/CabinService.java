@@ -64,8 +64,16 @@ public class CabinService {
         } else{
             throw new NoSuchElementException("No cabin record exist or given id");
         }
-
-
     }
 
-}
+    public List<Cabin> findByPriceAndLocation(Integer price, String location) {
+        List<Cabin> cabinList = cabinRepository.findByPriceAndLocation(price, location);
+        return cabinList;
+    }
+
+        public List<Cabin> findByLocation(String location){
+            List<Cabin> cabinList = cabinRepository.findByLocation(location);
+            return cabinList;
+        }
+    }
+

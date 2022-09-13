@@ -19,7 +19,6 @@ public class Facility {
     @GeneratedValue(
             strategy= SEQUENCE,
             generator = "facility_sequence"
-
     )
     @Column(name="id")
     private int id;
