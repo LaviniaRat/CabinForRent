@@ -10,27 +10,27 @@ public class OwnerController {
     @Autowired
     OwnerService ownerService;
 
-    @GetMapping("/getOwners")
+    @GetMapping("/owners")
     public List<Owner> getAllOwners(){
         return ownerService.getAllOwners();
     }
 
-    @GetMapping("/getOwner")
+    @GetMapping("/owner")
     public Owner getOwner(int id){
         return ownerService.getOwnerById(id);
     }
 
-    @PostMapping("/saveOwner")
+    @PostMapping("/owner")
     public Owner saveOwner(Owner entity){
         return ownerService.saveOwner(entity);
     }
 
-    @DeleteMapping("/deleteOwner")
+    @DeleteMapping("/owner")
     public void deleteOwner(int id){
         ownerService.deleteOwnerById(id);
     }
 
-    @PutMapping("/updateOwner")
+    @PutMapping("/owner")
     public Owner updateOwner(Owner entity){
         return ownerService.updateOwner(entity);
     }
