@@ -48,11 +48,7 @@ public class OwnerService {
 
     public Owner saveOwner(Owner entity){
         return ownerRepository.save(entity);
-//        Owner newOwner = new Owner();
-//        newOwner.setName(entity.getName());
-//        newOwner.setEmail(entity.getEmail());
-//        newOwner.setPhone(entity.getPhone());
-//        return ownerRepository.save(newOwner);
+
     }
 
     public void deleteOwnerById(int id) throws  NoSuchElementException{
