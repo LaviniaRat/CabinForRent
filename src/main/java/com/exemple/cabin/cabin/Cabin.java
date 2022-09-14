@@ -1,5 +1,6 @@
 package com.exemple.cabin.cabin;
 
+import com.exemple.cabin.customer.Customer;
 import com.exemple.cabin.owner.Owner;
 import lombok.Data;
 
@@ -34,7 +35,11 @@ public class Cabin {
     @Column(name="location")
     private String location;
 
+    @OneToOne(mappedBy = "cabin")
+    private Customer customer;
+
     @ManyToOne
     @JoinColumn(name="owner_id")
     private Owner owner;
+
 }

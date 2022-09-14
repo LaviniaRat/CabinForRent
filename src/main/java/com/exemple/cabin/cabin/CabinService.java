@@ -75,5 +75,10 @@ public class CabinService {
             List<Cabin> cabinList = cabinRepository.findByLocation(location);
             return cabinList;
         }
+
+        public Cabin findByName(String name){
+            Cabin cabin = cabinRepository.findByName(name);
+            return cabin;
+        }
     }
 
