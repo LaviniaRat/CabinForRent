@@ -1,5 +1,6 @@
 package com.exemple.cabin.customer;
 
+import com.exemple.cabin.booking.Booking;
 import com.exemple.cabin.cabin.Cabin;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
@@ -34,5 +35,10 @@ public class Customer {
     private String email;
     @Column(name="phone")
     private int phone;
+
+    @JsonIgnore
+    @OneToMany
+    @JoinColumn(name="customer_id")
+    private Set<Booking> bookings;
 
 }

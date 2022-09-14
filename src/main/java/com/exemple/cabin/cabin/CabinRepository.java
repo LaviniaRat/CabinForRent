@@ -9,5 +9,6 @@ import java.util.List;
 public interface CabinRepository extends JpaRepository<Cabin,Integer> {
     List<Cabin> findByPriceAndLocation(Integer price, String location);
     List<Cabin> findByLocation(String location);
+    Cabin findByName(String name);
 
 }

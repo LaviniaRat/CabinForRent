@@ -26,6 +26,11 @@ public class CabinController {
         return cabinService.findByPriceAndLocation(price, location);
     }
 
+    @GetMapping("cabinByName")
+    public Cabin getCabinByName(String name){
+        return cabinService.findByName(name);
+    }
+
     @GetMapping("/cabinByLocation")
     public List<Cabin> getCabinByLocation(String location){
         return cabinService.findByLocation(location);
